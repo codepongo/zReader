@@ -1,10 +1,10 @@
 delete_node_by_class('span8 center');
 var article = document.getElementsByClassName('article-content')[0]
 article.addEventListener("DOMSubtreeModified", function(e) {
-  //end = document.getElementById('article-end');
-  //if (end != null) {
-  //  delete_node_by_id('article-end');
-  //}
+  var finish = document.getElementsByClassName('row finish ')[0];
+  if (finish != null) {
+    finish.style.setProperty('display', 'none');
+  }
   var paged = document.getElementsByClassName('paged')[0];
   if (paged) {
     paged.style.setProperty('display', 'none');
