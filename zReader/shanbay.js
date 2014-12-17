@@ -15,5 +15,9 @@ article.addEventListener("DOMSubtreeModified", function(e) {
       elements[i].style.setProperty('display', 'block');
     }
   }
+  var end = document.getElementById('article-end');
+  if (end) {
+    end.style.setProperty('display', 'block');
+  }
 
 }, false);
