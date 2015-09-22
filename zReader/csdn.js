@@ -15,6 +15,7 @@ delete_node_by_class('tag_list');
 delete_node_by_class('article_next_prev');
 delete_node_by_class('blog-associat-tag');
 delete_node_by_class('blog-ass-articl tracking-ad');
+delete_node_by_class('tracking-ad');
 m = document.getElementById('main');
 if (m != null) {
 	m.setAttribute('id', '');
