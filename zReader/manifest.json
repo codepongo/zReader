@@ -1,6 +1,6 @@
 {
 "name": "zReader",
-"version": "1.1.9",
+"version": "1.2.0",
 "manifest_version":2,
 "icons": {
 "48": "icon48.png"
@@ -35,6 +35,11 @@
 ,{
 "js":["base.js", "zhihu.js"],
 "matches":["http://www.zhihu.com/question/*/answer/*"],
+"run_at": "document_end"
+}
+,{
+"js":["base.js", "bluereader.js"],
+"matches":["http://bluereader.org/article/*"],
 "run_at": "document_end"
 }
 ]

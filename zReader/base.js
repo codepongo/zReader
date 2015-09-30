@@ -1,4 +1,11 @@
 var $ = document.querySelectorAll.bind(document);
+function delete_node_by_tag(tag) {
+  var el = document.getElementsByTagName(tag);
+  for (var i = 0; i < el.length; i++) {
+    delete_node(el[i]);
+  }
+}
+
 function getElementsByClassName(n) { 
     var el = [],
         _el = document.getElementsByTagName('*');
