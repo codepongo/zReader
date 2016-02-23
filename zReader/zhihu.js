@@ -5,7 +5,15 @@ delete_node_by_class('awesome-answer-list');
 delete_node_by_class('zu-main-sidebar');
 delete_node_by_class('zh-backtotop');
 delete_node_by_id('question-status');
-delete_node_by_class('zm-votebar goog-scrollfloater');
-delete_node_by_class('zm-votebar version-classic');
-delete_node_by_class('zm-votebar version-classic goog-scrollfloater');
 
+if (window.onload == null) {
+  on_load = function(){};
+}
+else {
+  on_load = window.onload;
+}
+window.onload = function() {
+  on_load();
+  delete_node_by_class('zm-votebar goog-scrollfloater');
+  delete_node_by_class('comment-app-holder');
+}
