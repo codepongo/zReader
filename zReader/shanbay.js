@@ -1,4 +1,7 @@
 delete_node_by_class('span8 center');
+delete_node_by_class('reader-nav');
+delete_node_by_class('articleSideBar');
+
 var article = document.getElementsByClassName('article-content')[0]
 article.addEventListener("DOMSubtreeModified", function(e) {
   var finish = document.getElementsByClassName('row finish ')[0];

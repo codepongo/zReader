@@ -1,6 +1,6 @@
 {
 "name": "zReader",
-"version": "1.2.3",
+"version": "1.2.4",
 "manifest_version":2,
 "icons": {
 "48": "icon48.png"
@@ -30,6 +30,7 @@
 {
 "js": ["base.js", "shanbay.js"],
 "matches": ["http://www.shanbay.com/read/article/*/"],
+"matches": ["https://www.shanbay.com/read/article/*/"],
 "run_at": "document_end"
 }
 ,{
