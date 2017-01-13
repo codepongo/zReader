@@ -16,4 +16,5 @@ window.onload = function() {
   on_load();
   delete_node_by_class('zm-votebar goog-scrollfloater');
   delete_node_by_class('comment-app-holder');
+  delete_node_by_class('FeedbackButton-button-3waL');
 }
