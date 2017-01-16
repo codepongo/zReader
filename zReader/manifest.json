@@ -1,6 +1,6 @@
 {
 "name": "zReader",
-"version": "1.2.4",
+"version": "1.2.5",
 "manifest_version":2,
 "icons": {
 "48": "icon48.png"
@@ -39,6 +39,13 @@
 "matches":["https://www.zhihu.com/question/*/answer/*"],
 "run_at": "document_end"
 }
+,{
+"js":["base.js", "zhuanlan.zhihu.js"],
+"matches":["http://zhuanlan.zhihu.com/p/*"],
+"matches":["https://zhuanlan.zhihu.com/p/*"],
+"run_at": "document_end"
+}
+
 ,{
 "js":["base.js", "bluereader.js"],
 "matches":["http://bluereader.org/article/*"],
