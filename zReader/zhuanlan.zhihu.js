@@ -1,5 +1,9 @@
 delete_node_by_class_when_event('recommend-posts ng-scope');
 delete_node_by_id('header');
+delete_node_by_class('Layout-navbarHolder');
+delete_node_by_class_when_event('PostComment');
+delete_node_by_class_when_event('PostIndex-footer');
+delete_node_by_class_when_event('PostIndex-recommendZone');
 if (window.onload == null) {
   on_load = function(){};
 }
