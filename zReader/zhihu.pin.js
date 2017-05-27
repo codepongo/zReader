@@ -1,11 +1,13 @@
+delete_node_by_class('PostComment');
 delete_node_by_class_when_event('recommend-posts ng-scope');
 delete_node_by_id('header');
 delete_node_by_class('Layout-navbarHolder');
+delete_node_by_class('Button PostIndex-authorFollowButton Button--green')
+delete_node_by_class('Button PostIndex-voteButton Button--green');
+/*
 delete_node_by_class_when_event('PostComment');
 delete_node_by_class_when_event('PostIndex-footer');
 delete_node_by_class_when_event('PostIndex-recommendZone');
-delete_node_by_class_when_event('Contributes PostIndex-contributes av-card')
-delete_node_by_class_when_event('PostIndex-recommendZone av-card')
 if (window.onload == null) {
   on_load = function(){};
 }
@@ -34,3 +36,4 @@ window.onload = function() {
     }
   },false);
 }
+*/

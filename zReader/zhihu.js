@@ -20,6 +20,7 @@ window.onload = function() {
   delete_node_by_class('QuestionMainDivider');
   delete_node_by_class('List');
   delete_node_by_class('QuestionMainAction');
+  delete_node_by_class('Question-sideColumn Question-sideColumn--sticky')
 }
 
 
