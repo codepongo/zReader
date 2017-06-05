@@ -34,6 +34,14 @@ delete_node_by_class('CornerButtons');
 delete_node_by_class_when_event('QuestionMainDivider');
 delete_node_by_class_when_event('List');
 delete_node_by_class_when_event('QuestionMainAction');
+delete_node_by_class_when_event('QuestionHeader-topics');
+delete_node_by_class_when_event('AuthorInfo-badge');
+delete_node_by_class_when_event('UserLink-badge');
+delete_node_by_class_when_event('Voters');
+delete_node_by_class_when_event('HoverCard');
+delete_node_by_class_when_event('AnswerItem-extraInfo');
+
+Array.prototype.slice.call(document.getElementsByTagName('link')).forEach(function(e){if (e.rel == 'stylesheet'){e.href="";};});
 getElementsByClassName('QuestionHeader-main')[0].style.width='100%';
 getElementsByClassName('Question-mainColumn')[0].style.width='100%';
 //getElementsByClassName(
@@ -49,3 +57,4 @@ getElementsByClassName('Card').forEach(function(e) {
 delete_node_by_class_when_event('ContentItem-actions Sticky is-bottom');
 delete_node_by_class_when_event('ContentItem-actions');
 getElementsByClassName('Button QuestionRichText-more Button--plain')[0].click();
+
